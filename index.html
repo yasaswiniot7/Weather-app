@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<main>
+    <div id="slide1">
+        <form>
+            <input type="text" autocomplete="off" id="valueSearch" placeholder="Enter city name...">
+            <button type="submit">
+            </button>
+        </form>
+        <section class="result">
+            <figure class="name" id="city">
+                <figcaption>City Name</figcaption>
+                <img class="theme-flat" src="" alt="Country Flag">
+                <p id="dateTime"></p>
+            </figure>
+            <figure class="temperature" id="temperature">
+                <img src="" alt="Weather Icon">
+                <figcaption>
+                    <span>0</span>
+                    <sup>°C</sup>
+                </figcaption>
+            </figure>
+            <p class="description">Weather Description</p>
+            <ul class="weather-details">
+                <li>
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">--</span>%
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">--</span>%
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">--</span> hPa
+                </li>
+                <li>
+                    <span>Wind Speed</span>
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="windSpeed">--</span> m/s
+                </li>
+                <li>
+                    <span>Visibility</span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span id="visibility">--</span> km
+                </li>
+            </ul>
+        </section>
+        <button id="nextSlide">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+    <div id="slide2" class="hidden">
+        <section id="hourlyReport" class="report">
+            <h2>Hourly Report</h2>
+        </section>
+        <section id="weeklyReport" class="report">
+            <h2>Weekly Report</h2>
+        </section>
+        <button id="prevSlide">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+    </div>
+</main>
+
+<script src="script8.js"></script>
+</body>
+</html>
